@@ -1,0 +1,89 @@
+:root {
+    /* Descriptive color variables */
+    --big-stone: #10212A;
+    --botticelli: #DBE8ED;
+    --casper: #A8BFC9;
+    --golden-tainoi: #FFC860;
+    --mirage: #1A2A33;
+    --saffron: #F2B137;
+    --te-papa-green: #1F3641;
+    --turquoise-blue: #65E9E4;
+    --turquoise: #31C3BD;
+
+    /* Font families */
+    --font-family: "Outfit", serif;
+
+    /* Font sizes */
+    --font-size-heading-l: 40px;
+    --font-size-heading-m: 24px;
+    --font-size-heading-s: 20px;
+    --font-size-heading-xs: 16px;
+    --font-size-body: 14px; 
+}
+
+.game-screen-end-game-modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+
+.game-screen-end-game-modal__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--te-papa-green);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.game-screen-end-game-modal__paragraph {
+    font-weight: 600;
+    color: var(--botticelli);
+    text-transform: uppercase;
+    font-size: var(--font-size-body);
+    margin-bottom: 16px;
+}
+
+.game-screen-end-game-modal__title {
+    color: var(--golden-tainoi);
+    font-size: var(--font-size-heading-m);
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.game-screen-end-game-modal__title path {
+    fill: var(--golden-tainoi);
+}
+
+.game-screen-end-game-modal-buttons {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.game-screen-end-game-modal-buttons__button {
+    padding: 12px 16px;
+    color: var(--big-stone);
+    font-weight: 700;
+    background-color: var(--botticelli);
+    border-radius: 10px;
+    border-bottom: 4px solid var(--casper);
+    text-transform: uppercase;
+}
+
+.game-screen-end-game-modal-buttons__button--secondary {
+    background-color: var(--golden-tainoi);
+    border-bottom-color: var(--saffron);
+}

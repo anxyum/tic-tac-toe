@@ -1,0 +1,140 @@
+:root {
+    /* Descriptive color variables */
+    --botticelli: #DBE8ED;
+    --casper: #A8BFC9;
+    --golden-tainoi: #FFC860;
+    --mirage: #1A2A33;
+    --saffron: #F2B137;
+    --te-papa-green: #1F3641;
+    --turquoise-blue: #65E9E4;
+    --turquoise: #31C3BD;
+
+    /* Font families */
+    --font-family: "Outfit", serif;
+
+    /* Font sizes */
+    --font-size-heading-l: 40px;
+    --font-size-heading-m: 24px;
+    --font-size-heading-s: 20px;
+    --font-size-heading-xs: 16px;
+    --font-size-body: 14px; 
+}
+
+body {
+    background-color: var(--mirage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.new-game-screen {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new-game-screen-icons {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+    justify-content: center;
+}
+
+.new-game-screen-icons__cross path {
+    fill: var(--turquoise);
+}
+
+.new-game-screen-icons__oval path {
+    fill: var(--golden-tainoi);
+}
+
+.new-game-screen-pick-player {
+    background-color: var(--te-papa-green);
+    padding: 24px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+.new-game-screen-pick-player__title {
+    color: var(--casper);
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.new-game-screen-pick-player-icons {
+    list-style-type: none;
+    display: flex;
+    background-color: var(--mirage);
+    border-radius: 8px;
+    padding: 8px;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.new-game-screen-pick-player-icon,
+.new-game-screen-pick-player-icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.new-game-screen-pick-player-icon path,
+.new-game-screen-pick-player-icon path {
+    fill: var(--casper);
+}
+
+.new-game-screen-pick-player-icon--selected {
+    background-color: var(--casper);
+}
+
+.new-game-screen-pick-player-icon--selected path {
+    fill: var(--mirage);
+}
+
+.new-game-screen-pick-player__description {
+    color: var(--casper);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.new-game-screen-new-game-buttons {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.new-game-screen-new-game-buttons__button {
+    background-color: var(--golden-tainoi);
+    border-bottom: 8px solid var(--saffron);
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: var(--mirage);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.new-game-screen-new-game-buttons__button--secondary {
+    background-color: var(--turquoise-blue);
+    border-bottom-color: var(--turquoise);
+}
+
+
+@media screen and (min-width: 768px) {
+    .new-game-screen {
+        max-width: 460px;
+    }
+}
